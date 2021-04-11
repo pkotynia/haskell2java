@@ -1,2 +1,5 @@
 # haskell2java
-Haskell code examples ported to Java - just for fun
+Haskell code ported to Java - without any purpose :)
+
+haskell code samples were taken from:
+http://learnyouahaskell.com/
