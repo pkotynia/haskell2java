@@ -1,3 +1,5 @@
+package com.polcodex.haskell;
+
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -25,12 +27,5 @@ public class RightTriangles {
         return IntStream.rangeClosed(first, last).boxed().collect(Collectors.toList());
     }
 
-    record Triangle(Integer a, Integer b, Integer c) {
-        public Triangle(Integer a, Integer b, Integer c) {
-            this.a = a;
-            this.b = b;
-            this.c = c;
-            System.out.println("creating tuple " + this);
-        }
-    };
+    record Triangle(Integer a, Integer b, Integer c) {};
 }
