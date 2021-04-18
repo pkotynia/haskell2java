@@ -25,9 +25,6 @@ public class Factorial {
     }
 
     static BigInteger factorialRecursion(BigInteger n) {
-        if (n.compareTo(TWO) <= 0) {
-            return n;
-        }
-        return n.multiply(factorialRecursion(n.subtract(ONE)));
+        return n.compareTo(TWO) <= 0 ? n : n.multiply(factorialRecursion(n.subtract(ONE)));
     }
 }
